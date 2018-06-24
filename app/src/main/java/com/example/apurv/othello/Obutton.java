@@ -12,12 +12,12 @@ public class Obutton extends AppCompatButton {
     public Obutton(Context context) {
         super(context);
         setTextColor(Color.BLUE);
-        setText(Integer.toString(value));
+        //setText(Integer.toString(value));
     }
 
     public void setValue(int value) {
         this.value = value;
-        setText(Integer.toString(value));
+        //setText(Integer.toString(value));
 
     }
 
