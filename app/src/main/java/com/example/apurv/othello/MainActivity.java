@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         status = 1;
         board = new Obutton[size][size];
         rootLayout.removeAllViews();
-
+        rootLayout.setBackground(getDrawable(R.drawable.othelloboard));
 
         for (int i = 0; i < size; i++) {
 
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button.setOnClickListener(this);
 
                 button.setCoordinate(i, j);
-
+                button.setBackground(getDrawable(R.drawable.blank_button));
                 LinearLayout row = rows.get(i);
                 row.addView(button);
                 board[i][j] = button;

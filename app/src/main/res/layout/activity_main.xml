@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/root"
         android:orientation="vertical"
-        android:layout_weight="8">
+        android:layout_weight="6">
 
     </LinearLayout>
 </LinearLayout>
