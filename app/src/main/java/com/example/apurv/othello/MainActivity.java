@@ -66,6 +66,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rootLayout.removeAllViews();
         rootLayout.setBackground(getDrawable(R.drawable.othelloboard));
 
+      //  LinearLayout.LayoutParams layoutParams1 =
+             //   new LinearLayout.LayoutParams(rootLayout.getWidth(),rootLayout.getWidth());
+       // rootLayout.setLayoutParams(layoutParams1);
+
         for (int i = 0; i < size; i++) {
 
             LinearLayout linearLayout = new LinearLayout(this);

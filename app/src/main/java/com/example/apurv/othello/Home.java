@@ -13,6 +13,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
     EditText et1;
     EditText et2;
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,10 +32,12 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         if(TextUtils.isEmpty(black_player))
         {
             et1.setError("Fill Name");
+            return;
         }
         if(TextUtils.isEmpty(white_player))
         {
             et2.setError("Fill Name");
+            return;
         }
 
         Intent intent=new Intent(this,MainActivity.class);
