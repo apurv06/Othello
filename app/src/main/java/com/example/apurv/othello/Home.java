@@ -29,16 +29,18 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         String black_player=et1.getText().toString();
         String white_player=et2.getText().toString();
 
-        if(TextUtils.isEmpty(black_player))
-        {
-            et1.setError("Fill Name");
-            return;
-        }
         if(TextUtils.isEmpty(white_player))
         {
             et2.setError("Fill Name");
             return;
         }
+        if(TextUtils.isEmpty(black_player))
+        {
+            et1.setError("Fill Name");
+            return;
+
+        }
+
 
         Intent intent=new Intent(this,MainActivity.class);
 
